@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="computer.png"/>
+<link rel="apple-touch-icon" href="computer.png"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Links Tienda 792</title>
+
+<style>
+    /* Estilo para el encabezado */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    /* Estilo para el texto del encabezado */
+    header h1 {
+        margin: 0;
+    }
+
+    /* Estilo para la clase de tarjeta */
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 10px;
+        width: calc(50% - 20px); /* Dos tarjetas por ancho de página */
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        background-color: #f9f9f9;
+    }
+
+    /* Estilo para el botón */
+    .card button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .card button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Cambiar a una sola tarjeta por ancho cuando la pantalla es menor a 700px */
+    @media screen and (max-width: 700px) {
+        .card {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    /* Estilos para el footer */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-container p {
+        margin: 0 10px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Tienda 792 Carrefour</h1>
+</header>
+
+<div id="links-container"></div>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Hernan Manera.</p>
+        <p> Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    // Array de enlaces
+    const dataMatrix = [
+        { content: "https://docs.google.com/forms/d/e/1FAIpQLSfz_CdCLjbi_Sbjh5KVv2a1BqoLLNuQWpc5sKNTTTgshPofCg/viewform", title: "Form. PFT" },
+        { content: "https://docs.google.com/forms/d/12Ua3a5JGHZMDenMAa8MCA6Pr7zZ10rRnAJBEue6wL-o/edit", title: "Proximo a vencer. Todos los dias" },
+        { content: "https://docs.google.com/forms/d/1tmRO9C1NIWhbb6rn6nXEwD9yamqHouxg5uetzrP1eNE/edit", title: "Bebidas. sabados a  lunes." },
+        { content: "https://docs.google.com/forms/d/1YCbIKHxhz2ddark1U4fqWftVHtn75pZW5EtkTa1wIuw/edit", title: "Marca propia: sabados a  lunes." },
+        { content: "https://docs.google.com/forms/d/e/1FAIpQLSfY41aHlsXRNVQs_hVqIfLQKzGsZ5B3ckJKRE-G--74ie0-_g/viewform", title: "Productos inactivos." },
+        { content: "https://forms.gle/jSKSWfE83e1mjD3v9", title: "Planilla 30 60 90." },
+        {content: "https://api.whatsapp.com/send?phone=+5491122405919&text=Hola%20quiero%20agregar%20...", title: "Enviame un mensaje con lo que quieras agregar. Lo hacemos por vos" }
+    ];
+
+    // Función para recorrer los enlaces y mostrarlos en el HTML
+    function mostrarEnlaces() {
+        var container = document.getElementById("links-container");
+        dataMatrix.forEach(function(enlace) {
+            var linkDiv = document.createElement("div");
+            linkDiv.classList.add("card"); // Agregar la clase de tarjeta al contenedor
+            var nombreElement = document.createElement("h3");
+            nombreElement.textContent = enlace.title;
+            var botonElement = document.createElement("button");
+            botonElement.textContent = "Ir al enlace";
+            botonElement.addEventListener("click", function() {
+                window.location.href = enlace.content;
+            });
+            linkDiv.appendChild(nombreElement);
+            linkDiv.appendChild(botonElement);
+            container.appendChild(linkDiv);
+        });
+    }
+
+    // Ejecutar la función para mostrar los enlaces
+    mostrarEnlaces();
+</script>
+
+</body>
+</html>
