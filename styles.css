@@ -1,16 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Playwrite+ES:wght@100..400&display=swap');
-
+.html{
+    height: 100vh;
+}
+.links{
+    
+    padding: 20px 0px;
+    background-color: grey;
+    border: 10px solid #333;
+}
 /* Estilo para el encabezado */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+/*Membrete*/
+.membrete {
+    padding: 2px 4px;
+    width: 90%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
 }
 
-/* Estilo para el texto del encabezado */
-header h1 {
-    margin: 0;
+.membrete-name>h3 {
+    margin: 2px;
+}
+
+.membrete-name>h5 {
+    margin: 2px;
+}
+
+.empresa-info {
+    text-align: right;
+}
+
+.empresa-info>p {
+    margin: 2px;
 }
 
 #links-container {
@@ -83,10 +112,13 @@ header h1 {
 
 /* Cambiar a una sola tarjeta por ancho cuando la pantalla es menor a 700px */
 @media screen and (max-width: 700px) {
+    .membrete{
+        font-size: 14px;
+    }
     .card {
         height: 150px;
         gap: 0;
-        max-width: 40%;
+        width: 40%;
         display: block;
     }
     .contenedor-blur > p {
