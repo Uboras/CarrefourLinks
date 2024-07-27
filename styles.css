@@ -14,13 +14,11 @@ header h1 {
 }
 
 #links-container {
-
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    justify-content: space-around;
-    align-items: start;
+    justify-content: space-around; 
 
 }
 
@@ -28,11 +26,9 @@ header h1 {
 .card {
 
     height: 400px;
-    width: 350px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
+    margin: 5px;
     box-sizing: border-box;
     position: relative;
     box-shadow: 4px 4px 4px black;
@@ -76,7 +72,7 @@ header h1 {
     position: absolute;
     top: 0px;
     left: 10px;
-    font-size: 28px;
+    font-size: 18px;
     color: #272727;
     text-shadow: 3px 3px 2px #ccc;
 }
@@ -88,18 +84,25 @@ header h1 {
 /* Cambiar a una sola tarjeta por ancho cuando la pantalla es menor a 700px */
 @media screen and (max-width: 700px) {
     .card {
+        height: 150px;
+        gap: 0;
+        max-width: 50%;
+        display: block;
+    }
+    .contenedor-blur > h3 {
+        justify-content: flex-start;
+        align-items: end;
+        font-size: 8px;
+        
+    }
+    .contenedor-blur > button {
+        top: -10px;
+        left: 0px;
+        font-size: 8px;
         width: 100%;
-        display: block;
+        height: 30%;
     }
 }
-
-@media screen and (700px < width <1020px) {
-    .card {
-
-        display: block;
-    }
-}
-
 /* Estilos para el footer */
 footer {
     background-color: #333;

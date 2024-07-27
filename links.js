@@ -30,6 +30,7 @@
            botonElement.addEventListener("click", function () {
                window.location.href = enlace.content;
            });
+           linkDiv.style.width = "30%";
            linkDiv.style.backgroundImage = `url(${enlace.img})`;
            linkDiv.style.backgroundSize = "cover"; 
            linkDiv.style.backgroundPosition = "center";
