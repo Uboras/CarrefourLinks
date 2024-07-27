@@ -9,8 +9,7 @@
     { content: "https://docs.google.com/forms/d/e/1FAIpQLSfz_CdCLjbi_Sbjh5KVv2a1BqoLLNuQWpc5sKNTTTgshPofCg/viewform", title: "Panadería y fiambres", img: "fondo.jfif" },
     { content: "https://forms.gle/jSKSWfE83e1mjD3v9", title: "Planilla 30 60 90.", img: "fondo.jfif" },
     {content: "./Etiquetas/index.html", title: "Etiquetas Liquidación", img: "fondo.jfif"},
-    { content: "https://api.whatsapp.com/send?phone=+5491122405919&text=Hola%20quiero%20agregar%20...", title: "Envíame un mensaje con lo que quieras agregar.", img: "fondo.jfif" }
-];
+    ];
 
 
    // Función para recorrer los enlaces y mostrarlos en el HTML
@@ -20,17 +19,15 @@
         
            var linkDiv = document.createElement("div");
            linkDiv.classList.add("card"); // Agregar la clase de tarjeta al contenedor
-            var svgElement = document.createElement("svg");
             var contenedorBotonNombre = document.createElement("div")
             contenedorBotonNombre.classList.add("contenedor-blur");
-            var nombreElement = document.createElement("h3");
+            var nombreElement = document.createElement("p");
            nombreElement.textContent = enlace.title;
            var botonElement = document.createElement("button");
            botonElement.textContent = "Ir al enlace";
            botonElement.addEventListener("click", function () {
                window.location.href = enlace.content;
            });
-           linkDiv.style.width = "30%";
            linkDiv.style.backgroundImage = `url(${enlace.img})`;
            linkDiv.style.backgroundSize = "cover"; 
            linkDiv.style.backgroundPosition = "center";
