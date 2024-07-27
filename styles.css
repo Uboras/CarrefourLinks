@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 .html{
+    margin: auto;
     height: 100vh;
 }
 .links{
@@ -122,17 +123,17 @@ header {
         font-size: 14px;
     }
     .card {
-        height: 200px;
+        height: 210px;
         gap: 0;
         width: 40%;
         display: block;
     }
     .contenedor-blur > p {
-        font-weight: 400;
+        font-weight: 800;
         position: absolute;
-        top: -10px;
+        top: -15px;
         left: 5px;
-        font-size: 12px;
+        font-size: 16px;
         color: #272727;
         text-shadow: 2px 2px 2px #ccc;
     }
@@ -140,7 +141,7 @@ header {
     .contenedor-blur > button {
         padding: 1px;
         text-align: center;
-        top: -.7em;
+        top: -15px;
         left: 25%;
         font-size: 12px;
         width: 50%;
