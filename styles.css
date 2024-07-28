@@ -7,13 +7,17 @@
 }
 .html{
     margin: auto;
-    height: 100vh;
+    
+}
+body{
+    border: 5px solid white;
+    min-height:100vh;
 }
 .links{
     position: relative;
     padding: 15px 0px;
     background-color: grey;
-    border: 10px solid #333;
+    border: 15px solid #333;
 }
 /* Estilo para el encabezado */
 header {
@@ -21,7 +25,7 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 /*Membrete*/
 .membrete {
@@ -78,7 +82,7 @@ header {
     color: #fff;
     border: none;
     padding: 4px 8px;
-    border-radius: 8px;
+    border-radius: 0px 16px 8px 0px;
     cursor: pointer;
     position: absolute;
     bottom: -1px;
@@ -123,7 +127,7 @@ header {
         font-size: 14px;
     }
     .card {
-        height: 210px;
+        height: 300px;
         gap: 0;
         width: 40%;
         display: block;
@@ -133,7 +137,7 @@ header {
         position: absolute;
         top: -15px;
         left: 5px;
-        font-size: 16px;
+        font-size: 20px;
         color: #272727;
         text-shadow: 2px 2px 2px #ccc;
     }
@@ -141,11 +145,12 @@ header {
     .contenedor-blur > button {
         padding: 1px;
         text-align: center;
-        top: -15px;
-        left: 25%;
-        font-size: 12px;
+        top: -25%;
+        left: 0;
+        font-size: 16px;
         width: 50%;
         height: 30%;
+        border-radius: 0px 16px 16px 0px;
     }
 }
 .borde-interior_superior, .borde-interior_inferior{
@@ -157,14 +162,15 @@ header {
 
 .borde-interior_superior{
     top: -8px;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 .borde-interior_inferior{
     bottom: -8px;
-    border-radius: 8px;
+    border-radius:15px;
 }
 /* Estilos para el footer */
 footer {
+    height: 10vh;
     background-color: #333;
     color: #fff;
     padding: 20px 0;
@@ -179,5 +185,5 @@ footer {
 }
 
 .footer-container p {
-    margin: 0 10px;
+    margin: 0 15px;
 }
