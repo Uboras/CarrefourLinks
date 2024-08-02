@@ -147,51 +147,7 @@
     </div>
 </div>
 <!--4-->
-<div id="etiquetas">
-    <div id="form-4" class="form-container">
-        <form id="priceLabelForm">
-            <div class="form-group">
-                <input placeholder="Nombre del producto" type="text" id="productName4" name="productName" required>
-            </div>
-     
-            <div class="form-group">
-                <input placeholder="Cupón de descuento" type="text" id="price4" name="price" required>
-            </div>
-            <div class="form-group">
-                <input placeholder="Validez" type="text" id="validity4" name="validity" required>
-            </div>
-            <div class="form-group">
-                <input placeholder="Precio Normal" type="text" id="regularPrice4" name="regularPrice" required>
-            </div>
-            <div class="form-group">
-                <button type="button" onclick="generateLabel(4)">Generar Etiqueta</button>
-                <button type="button" onclick="Eliminar(4)">Eliminar Etiqueta</button>
-            </div>
-        </form>
-    </div>
 
-    <div class="label-container" id="labelContainer4" style="display: block;">
-        <div class="Liquidacion">LIQUIDACION</div>
-        <div class="title" id="labelTitle4"></div>
-        <div style="display: flex; justify-content: space-around;">
-            <div class="discount-box">
-                <div class="discount" id="labelDiscount4"></div>
-                <div>DESCUENTO</div>
-            </div>
-            <div class="discount-price">
-                <div class="price" id="labelPrice4"></div>
-                <div class="small-text" id="labelValidity4"></div>
-                <div class="small-text" id="labelMaxUnits4"></div>
-            </div>
-            <div class="regular-price">
-                <div>PRECIO NORMAL</div>
-                <div class="price-regular" id="labelRegularPrice4"></div>
-                <div class="small-text" id="labelUnitPrice4"></div>
-            </div>
-
-        </div>
-    </div>
-</div>
 <button id="boton-Impresion" type="button" onclick="generatePrint()">Imprimir Etiquetas</button>
 </body>
 
