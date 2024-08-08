@@ -24,7 +24,7 @@
             var nombreElement = document.createElement("p");
            nombreElement.textContent = enlace.title;
            var botonElement = document.createElement("button");
-           botonElement.textContent = "Ir al enlace";
+           botonElement.textContent = "Enlace";
            botonElement.addEventListener("click", function () {
                window.location.href = enlace.content;
            });

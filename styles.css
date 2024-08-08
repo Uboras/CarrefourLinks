@@ -10,6 +10,8 @@
     
 }
 body{
+    margin: auto;
+   width: 80%; 
     border: 5px solid white;
     min-height:100vh;
 }
@@ -126,6 +128,7 @@ header {
     .membrete{
         font-size: 14px;
     }
+
     .card {
         height: 300px;
         gap: 0;
@@ -135,23 +138,27 @@ header {
     .contenedor-blur > p {
         font-weight: 800;
         position: absolute;
-        top: -15px;
-        left: 5px;
-        font-size: 20px;
+        top: -10px;
+        left: px;
+        font-size: 18px;
         color: #272727;
         text-shadow: 2px 2px 2px #ccc;
     }
     
     .contenedor-blur > button {
-        padding: 1px;
+        padding: 10px;
         text-align: center;
-        top: -25%;
-        left: 0;
+        top: -135%;
+        left: 7px;
         font-size: 16px;
-        width: 50%;
-        height: 30%;
-        border-radius: 0px 16px 16px 0px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
     }
+    body{
+        width: 100%;
+}
+
 }
 .borde-interior_superior, .borde-interior_inferior{
     width: 100%;
