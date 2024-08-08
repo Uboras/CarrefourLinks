@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Playwrite+ES:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family:MedievalSharp&family:Playwrite+ES:wght@100..400&display:swap');
 /* Reset CSS Básico */
 * {
     margin: 0;
@@ -11,7 +11,7 @@
 }
 body{
     margin: auto;
-   width: 80%; 
+   width: 100%; 
     border: 5px solid white;
     min-height:100vh;
 }
@@ -66,8 +66,12 @@ header {
 
 /* Estilo para la clase de tarjeta */
 .card {
-    width: 200px;
-    height: 400px;
+    background-Image : url("./Assets/fondo.jfif");
+    background-Size : cover;
+    background-Position : center;
+    background-Repeat:no-repeat;
+    width: 250px;
+    height: 376px;
     border: 1px solid #ccc;
     border-radius: 8px;
     margin: 5px;
@@ -114,7 +118,7 @@ header {
     position: absolute;
     top: 0px;
     left: 10px;
-    font-size: 18px;
+    font-size: 20px;
     color: #272727;
     text-shadow: 3px 3px 2px #ccc;
 }
@@ -130,9 +134,10 @@ header {
     }
 
     .card {
+        background-image: url("./Assets/fondosmall.jpg");
         height: 300px;
         gap: 0;
-        width: 40%;
+        width: 200px;
         display: block;
     }
     .contenedor-blur > p {
@@ -146,10 +151,10 @@ header {
     }
     
     .contenedor-blur > button {
-        padding: 10px;
+        padding: 4px;
         text-align: center;
         top: -135%;
-        left: 7px;
+        left: 1px;
         font-size: 16px;
         width: 70px;
         height: 70px;
