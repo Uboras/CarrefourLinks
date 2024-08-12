@@ -8,6 +8,7 @@
     { content: "https://docs.google.com/forms/d/e/1FAIpQLSfY41aHlsXRNVQs_hVqIfLQKzGsZ5B3ckJKRE-G--74ie0-_g/viewform", title: "Productos inactivos", img: "./assets/fondo.jfif" },
     { content: "https://docs.google.com/forms/d/e/1FAIpQLSfz_CdCLjbi_Sbjh5KVv2a1BqoLLNuQWpc5sKNTTTgshPofCg/viewform", title: "Panadería y fiambres", img: "./assets/fondo.jfif" },
     { content: "https://forms.gle/jSKSWfE83e1mjD3v9", title: "Vto 30-60-90", img: "./assets/fondo.jfif" },
+{ content: "https://forms.gle/EUvSbrhKaSo7q7dg9", title: "Rescate - donación", img: "./assets/fondo.jfif" },
     {content: "./Etiquetas/index.html", title: "Etiquetas Liquidación", img: "./assets/fondo.jfif"},
     ];
 
