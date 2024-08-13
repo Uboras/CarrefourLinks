@@ -8,8 +8,17 @@
     { content: "https://docs.google.com/forms/d/e/1FAIpQLSfY41aHlsXRNVQs_hVqIfLQKzGsZ5B3ckJKRE-G--74ie0-_g/viewform", title: "Productos inactivos", img: "./assets/fondo.jfif" },
     { content: "https://docs.google.com/forms/d/e/1FAIpQLSfz_CdCLjbi_Sbjh5KVv2a1BqoLLNuQWpc5sKNTTTgshPofCg/viewform", title: "Panadería y fiambres", img: "./assets/fondo.jfif" },
     { content: "https://forms.gle/jSKSWfE83e1mjD3v9", title: "Vto 30-60-90", img: "./assets/fondo.jfif" },
-{ content: "https://forms.gle/EUvSbrhKaSo7q7dg9", title: "Rescate - donación", img: "./assets/fondo.jfif" },
+    {content: "https://forms.gle/EUvSbrhKaSo7q7dg9", title: "Rescate - donación", img: "./assets/fondo.jfif" },
     {content: "./Etiquetas/index.html", title: "Etiquetas Liquidación", img: "./assets/fondo.jfif"},
+        {content: "http://10.22.176.13/cajas_oym/", title: "Portal de OyM", img: "./assets/fondo.jfif"},
+        {content: "http://10.22.176.13/promo_garantizada/tiendas/index.php", title: "Promo Garantizada", img: "./assets/fondo.jfif"},
+        {content: "https://drive.google.com/drive/u/0/folders/0AFqugPXOPe6AUk9PVA", title: "Contactos Frecuentes", img: "./assets/fondo.jfif"},
+        {content: "http://10.94.164.15:21000/cupones/cupones.do", title: "Consulta de Cupones", img: "./assets/fondo.jfif"},
+        {content: "https://www.ohgiftcard.com.ar/", title: "Consulta GiftCard", img: "./assets/fondo.jfif"},
+        {content: "http://10.94.164.210:10000/stl/app/secure", title: "STL", img: "./assets/fondo.jfif"},
+        {content: "http://10.94.164.48/intranet/tesoreria/", title: "Etiquetas Liquidación", img: "./assets/fondo.jfif"},
+        {content: "https://inccarrefourarg2021.my.salesforce.com/", title: "SALESFORCE", img: "./assets/fondo.jfif"},
+        {content: "https://gtickets.carrefour.com.ar/frontend/", title: "Busqueda tickets caja", img: "./assets/fondo.jfif"},
     ];
 
 
