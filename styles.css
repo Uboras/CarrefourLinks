@@ -66,47 +66,42 @@ header {
 
 /* Estilo para la clase de tarjeta */
 .card {
-    background-Image : url("./Assets/fondo.jfif");
-    background-Size : cover;
-    background-Position : center;
-    background-Repeat:no-repeat;
+    background-color: #d6cece;
     width: 250px;
-    height: 376px;
+    height: 250px;
     border: 1px solid #ccc;
     border-radius: 8px;
     margin: 5px;
     box-sizing: border-box;
     position: relative;
     box-shadow: 4px 4px 4px black;
-
-}
-
-/* Estilo para el botón */
-.contenedor-blur button {
-    width: 40%;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 4px 8px;
-    border-radius: 0px 16px 8px 0px;
     cursor: pointer;
-    position: absolute;
-    bottom: -1px;
-    right: -1.5px;
-    transition: background-color 0.3s;
+
 }
+
 
 .contenedor-blur {
-    border-radius: 8px 16px;
+    border-radius: 8px;
     position: absolute;
     bottom: 0px;
     left: 0px;
     height: calc(35%);
     width: 100%;
-    backdrop-filter: blur(10px);
+    background-color: rgba(63, 119, 238, 0.3);
     
 }
-
+.plataform{
+    
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 20px;
+    color: rgb(238, 231, 231);
+    background-color: #255cd1;
+    position: absolute;
+    
+    top: 0;
+    left: 0 ;
+}
 
 
 .contenedor-blur >p {
@@ -134,10 +129,9 @@ header {
     }
 
     .card {
-        background-image: url("./Assets/fondosmall.jpg");
-        height: 300px;
+        height: 250px;
         gap: 0;
-        width: 200px;
+        width: 250px;
         display: block;
     }
     .contenedor-blur > p {
@@ -145,22 +139,12 @@ header {
         position: absolute;
         top: -10px;
         left: px;
-        font-size: 18px;
+        font-size: 24px;
         color: #272727;
         text-shadow: 2px 2px 2px #ccc;
     }
     
-    .contenedor-blur > button {
-        padding: 4px;
-        text-align: center;
-        top: -135%;
-        left: 1px;
-        font-size: 16px;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-    }
-    body{
+     body{
         width: 100%;
 }
 
@@ -198,4 +182,63 @@ footer {
 
 .footer-container p {
     margin: 0 15px;
+}
+/* Estilo por defecto */
+.path-red {
+    transition: transform 0.3s ease;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.path-blue {
+    transition: fill 0.3s ease;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+/* Hover animations */
+.svg-container:hover .path-red {
+    fill: #FF5733; 
+}
+.svg-container{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    align-items: center;
+}
+.svg-container:hover {
+
+    animation: 1s ease  forwards scale 1;
+}
+.svg-text::after {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    content : "Express";
+    color: #0056b3;
+    font: 2em sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+.svg-text{
+position: absolute;
+top:18%;
+visibility: hidden;
+border-radius: 8px;
+padding: 4px;
+background-color:rgba(58, 58, 221, 0.1);
+}
+.svg-container:hover .svg-text{
+animation: 1s ease forwards aparecer 0.3s;
+}
+@keyframes scale{
+    0%{}
+    to{ scale:1.4;}
+
+}
+@keyframes aparecer {
+    0%{scale: 0.1;}
+    to{ 
+        visibility: visible;
+        scale: 1.1;}
+    
+}
+.svg-container:hover .path-blue {
+    fill: #FF5733; 
+
 }
