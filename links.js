@@ -108,13 +108,7 @@ const dataMatrix = [
     title: "STL",
     img: "./assets/fondo.jfif",
     plataform: "Solo en Pc",
-  },
-  {
-    content: "http://10.94.164.48/intranet/tesoreria/",
-    title: "Etiquetas Liquidación",
-    img: "./assets/fondo.jfif",
-    plataform: "Solo en Pc",
-  },
+  }
 ];
 
 // Función para recorrer los enlaces y mostrarlos en el HTML
