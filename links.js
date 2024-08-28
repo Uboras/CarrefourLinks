@@ -77,7 +77,7 @@ const dataMatrix = [
     content: "https://gtickets.carrefour.com.ar/frontend/",
     title: "Busqueda tickets caja",
     img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
+    plataform: "Solo Pc",
   },
   {
     content: "./Etiquetas/index.html",
