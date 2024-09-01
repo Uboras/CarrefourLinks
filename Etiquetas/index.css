@@ -50,7 +50,7 @@ body {
 }
 
 .title {
-    font-size: 26px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .price {
-    font-size: 60px;
+    font-size: 72px;
     font-weight: bold;
 }
 
@@ -94,8 +94,8 @@ body {
 }
 
 .Liquidacion {
-    margin: 15px;
-    font-size: 50px;
+    margin:15px 5px;
+    font-size: 48px;
 }
 #boton-Impresion{
     margin-top: -8px;
