@@ -5,154 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Etiqueta de Precio</title>
-    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
-    <!--1-->
-    <div id="etiquetas">
-        <div id="form-1" class="form-container">
-            <form id="priceLabelForm">
-                <div class="form-group">
-                    <input placeholder="Nombre del producto" type="text" id="productName1" name="productName" required>
-                </div>
-                            <div class="form-group">
-                    <input placeholder="Cupón de descuento" type="text" id="price1" name="price" required>
-                </div>
-                               <div class="form-group">
-                    <input placeholder="Validez" type="text" id="validity1" name="validity" required>
-                </div>
-                             <div class="form-group">
-                    <input placeholder="Precio Normal" type="text" id="regularPrice1" name="regularPrice" required>
-                </div>
-                <div class="form-group">
-                    <button type="button" onclick="generateLabel(1)">Generar Etiqueta</button>
-                    <button type="button" onclick="Eliminar(1)">Eliminar Etiqueta</button>
-                </div>
-            </form>
-        </div>
+    <details open class="modal-novedades" id="Novedades">
+        <summary><strong> Novedades (click para cerrar/abrir)</strong></summary>
+        <ul><h1>Ahora puedes:</h1>
+            <li>Editar <b>todo</b> el texto una vez realizada la <b>etiqueta,</b> todo lo sobreado en gris.</li>
+            <li>Puedes eliminar el cuadro de descuento con <b>"Quitar descuento".</b></li>
+            <p><b>*Al editar texto dejaran de funcionar los cálculos automáticos*</b></p>
+        </ul>
+    </details>
+    <button id="boton-Impresion" type="button" onclick="generatePrint()">Imprimir</button>
+    <div id="etiquetasContainer"></div>
 
-        <div class="label-container" id="labelContainer1" style="display: block;">
-            <div class="Liquidacion">CONSUMO INMEDIATO</div>
-            <div class="title" id="labelTitle1"></div>
-            <div style="display: flex; justify-content: space-around;">
-                <div class="discount-box">
-                    <div class="discount" id="labelDiscount1"></div>
-                    <div>DESCUENTO</div>
-                </div>
-                <div class="discount-price">
-                    <div class="price" id="labelPrice1"></div>
-                    <div class="small-text" id="labelValidity1"></div>
-                    <div class="small-text" id="labelMaxUnits1"></div>
-                </div>
-                <div class="regular-price">
-                    <div>PRECIO NORMAL</div>
-                    <div class="price-regular" id="labelRegularPrice1"></div>
-                    <div class="small-text" id="labelUnitPrice1"></div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!--2-->
-    <div id="etiquetas">
-    <div id="form-2" class="form-container">
-        <form id="priceLabelForm">
-            <div class="form-group">
-                <input placeholder="Nombre del producto" type="text" id="productName2" name="productName" required>
-            </div>
-                     <div class="form-group">
-                <input placeholder="Cupón de descuento" type="text" id="price2" name="price" required>
-            </div>
-          
-            <div class="form-group">
-                <input placeholder="Validez" type="text" id="validity2" name="validity" required>
-            </div>
-            <div class="form-group">
-                <input placeholder="Precio Normal" type="text" id="regularPrice2" name="regularPrice" required>
-            </div>
-            <div class="form-group">
-                <button type="button" onclick="generateLabel(2)">Generar Etiqueta</button>
-                <button type="button" onclick="Eliminar(2)">Eliminar Etiqueta</button>
-            </div>
-        </form>
-    </div>
-
-    <div class="label-container" id="labelContainer2" style="display: block;">
-        <div class="Liquidacion">CONSUMO INMEDIATO</div>
-        <div class="title" id="labelTitle2"></div>
-        <div style="display: flex; justify-content: space-around;">
-            <div class="discount-box">
-                <div class="discount" id="labelDiscount2"></div>
-                <div>DESCUENTO</div>
-            </div>
-            <div class="discount-price">
-                <div class="price" id="labelPrice2"></div>
-                <div class="small-text" id="labelValidity2"></div>
-                <div class="small-text" id="labelMaxUnits2"></div>
-            </div>
-            <div class="regular-price">
-                <div>PRECIO NORMAL</div>
-                <div class="price-regular" id="labelRegularPrice2"></div>
-                <div class="small-text" id="labelUnitPrice2"></div>
-            </div>
-
-        </div>
-    </div>
-    </div>
-    <!--3-->
-    <div id="etiquetas">
-    <div id="form-3" class="form-container">
-        <form id="priceLabelForm">
-            <div class="form-group">
-                <input placeholder="Nombre del producto" type="text" id="productName3" name="productName" required>
-            </div>
-                     <div class="form-group">
-                <input placeholder="Cupón de descuento" type="text" id="price3" name="price" required>
-            </div>
-            
-            <div class="form-group">
-                <input placeholder="Validez" type="text" id="validity3" name="validity" required>
-            </div>
-            <div class="form-group">
-                <input placeholder="Precio Normal" type="text" id="regularPrice3" name="regularPrice" required>
-            </div>
-            <div class="form-group">
-                <button type="button" onclick="generateLabel(3)">Generar Etiqueta</button>
-                <button type="button" onclick="Eliminar(3)">Eliminar Etiqueta</button>
-            </div>
-        </form>
-    </div>
-
-    <div class="label-container" id="labelContainer3" style="display: block;">
-        <div class="Liquidacion">CONSUMO INMEDIATO</div>
-        <div class="title" id="labelTitle3"></div>
-        <div style="display: flex; justify-content: space-around;">
-            <div class="discount-box">
-                <div class="discount" id="labelDiscount3"></div>
-                <div>DESCUENTO</div>
-            </div>
-            <div class="discount-price">
-                <div class="price" id="labelPrice3"></div>
-                <div class="small-text" id="labelValidity3"></div>
-                <div class="small-text" id="labelMaxUnits3"></div>
-            </div>
-            <div class="regular-price">
-                <div>PRECIO NORMAL</div>
-                <div class="price-regular" id="labelRegularPrice3"></div>
-                <div class="small-text" id="labelUnitPrice3"></div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!--4-->
-
-<button id="boton-Impresion" type="button" onclick="generatePrint()">Imprimir Etiquetas</button>
 </body>
 
-    <script src="./index.js" ></script>
-
+<script src="./index.js"></script>
+<script src="./etiquetas.js"></script>
 </body>
 
 </html>
