@@ -28,7 +28,11 @@ function generatePrint() {
     document.getElementById(`boton-Impresion`).style.display = "none";
     document.getElementById(`Novedades`).style.display = "none";
     window.print();
-   
+    setTimeout(function() {
+    document.getElementById(`boton-Impresion`).style.display = "block";
+    document.getElementById(`Novedades`).style.display = "block";
+}, 5000);
+  
 }
 function quitarDescuento(num){
     document.getElementById(`container-descuento${num}`).style.display = "none";
