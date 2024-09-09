@@ -6,24 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Etiqueta de Precio</title>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./cardEtiquetas.css" />
 </head>
 
 <body>
-    <details open class="modal-novedades" id="Novedades">
-        <summary><strong> Novedades (click para cerrar/abrir)</strong></summary>
-        <ul><h1>Ahora puedes:</h1>
-            <li>Editar <b>todo</b> el texto una vez realizada la <b>etiqueta,</b> todo lo sobreado en gris.</li>
-            <li>Puedes eliminar el cuadro de descuento con <b>"Quitar descuento".</b></li>
-            <p><b>*Al editar texto dejaran de funcionar los cálculos automáticos*</b></p>
-        </ul>
-    </details>
-    <button id="boton-Impresion" type="button" onclick="generatePrint()">Imprimir</button>
-    <div id="etiquetasContainer"></div>
+    <header>
+        <section>
+            <div class="membrete">
+                <div class="membrete-name">
+                    <h3>Hernán Manera Dev</h3>
+                </div>
+                <div class="empresa-info">
+                    <p>Elige el tamaño</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <div class="links" style="min-height: 400px;">
+        <div class="borde-interior_superior"></div>
+        <div id="tamanos-container">
+            <div id="insertarCardstamanos"></div>
+
+        </div>
+        <div class="borde-interior_inferior"></div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Hernan Manera.</p>
+            <p>Carrefour Links ùtiles</p>
+        </div>
+    </footer>
+
 
 </body>
 
-<script src="./index.js"></script>
-<script src="./etiquetas.js"></script>
+
 </body>
+<script>
+
+
+const tamanos = [
+    ["Tamaño A4", "A4", "img1.png"],
+    ["Tamaño 1/2", "12", "img2.png"],
+    ["Tamaño 1/3", "13", "img3.png"],
+    ["Tamaño 1/4", "13", "img4.png"],
+    ["Tamaño 1/6", "13", "img6.png"],
+];
+
+let insert = "";
+let container = "<section class='container-card'>";
+
+// Cambiamos el orden de los parámetros: primero el valor (ejemplo), luego el índice (index)
+tamanos.forEach((ejemplo, index) => {
+    let temporal = `
+    <div class="card-etiquetas">
+        <summary>${ejemplo[0]}</summary>
+        <img class="card-img" src="./assets/${ejemplo[2]}" alt="Imagen ejemplo de tamaño">
+        <button id="boton-Impresion" type="button" onclick="abrirEnOtraPestana('${ejemplo[1]}')">${ejemplo[0]}</button>
+    
+    `;
+    insert += temporal;
+
+    // Si el índice NO es 2 (esto significa que excluimos el 3er elemento), añade "Próximamente"
+    if (index !== 2 && index !== 0) {
+        insert += `<div id="texto-Proximamente">Próximamente</div>`;
+    }
+    insert += "</div>"
+});
+
+container += insert;
+container += "</section>";
+document.getElementById('insertarCardstamanos').innerHTML = container;
+
+    function abrirEnOtraPestana(text) {
+//al crear ir modificando las rutas ... faltan (6 etiquetas - 4 etiquetas - )
+        switch (text) {
+            // 13= 1/3 = 3 etiquetas por hoja
+            case "13": window.open('./etiquetas3/index.html', '_blank'); break;
+            // 12 = 1/2 = 2 etiquetas por hoja
+            case "12": window.open('./etiquetas3/index.html', '_blank'); break;
+            // A4 = 1 etiquetas por hoja
+            case "A4": window.open('./etiquetasA4/index.html', '_blank'); break;
+            default: ""
+        }
+
+
+    }
+</script>
 
 </html>

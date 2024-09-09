@@ -20,29 +20,37 @@ function generateLabel(num) {
     (preciodescuento== regular)? document.getElementById(`price${num}`).style.display = "none" :"";
     document.getElementById(`form-${num}`).style.display = "none";
 }
+
+
+function salir(){
+    window.close();
+}
 function Eliminar(num){
     document.getElementById(`form-${num}`).style.display = "none";
     document.getElementById(`labelContainer${num}`).style.display = "none";
 }
 function generatePrint() {
     document.getElementById(`boton-Impresion`).style.display = "none";
+    document.getElementById(`boton-Impresion`).style.display = "none";
     document.getElementById(`Novedades`).style.display = "none";
     window.print();
     setTimeout(function() {
+        document.getElementById(`boton-Impresion`).style.display = "none";
     document.getElementById(`boton-Impresion`).style.display = "block";
     document.getElementById(`Novedades`).style.display = "block";
 }, 5000);
   
 }
-function quitarDescuento(num){
+function quitarDescuento(event, num){
+event.preventdefault;
     document.getElementById(`container-descuento${num}`).style.display = "none";
     document.getElementById(`price${num}`).style.display = "none";
     document.getElementById(`btn-quitar-descuento${num}`).style.display = "none";
     document.getElementById(`btn-agregar-descuento${num}`).style.display = "block";
 }
-function agregarDescuento(num){
+function agregarDescuento(event , num){
+    event.preventDefault; 
     document.getElementById(`container-descuento${num}`).style.display = "block";
-    document.getElementById(`price${num}`).style.display = "block";
     document.getElementById(`price${num}`).style.display = "block";
     document.getElementById(`btn-quitar-descuento${num}`).style.display = "block";
     document.getElementById(`btn-agregar-descuento${num}`).style.display = "none";

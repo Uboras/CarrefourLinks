@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Etiqueta de Precio</title>
+    <link rel="stylesheet" href="../index.css" />
+</head>
+
+<body>
+    <header id="header2">
+        <section>
+            <div class="membrete">
+                <div class="membrete-name">
+                    <h3>Hernán Manera Dev</h3>
+                    <h5>Desarollos Tecnológicos</h5>
+                </div>
+                <div class="empresa-info">
+                    <p>Argentina,Buenos Aires</p>
+                    <p>Teléfono:(11) 2240-5919 </p>
+                    <p>hernanmanera@hotmail.com.ar</p>
+    
+                </div>
+            </div>
+        </section>
+    </header>
+    <button id="boton-Impresion" type="button" onclick="generatePrint2()">Imprimir</button>
+    <div id="etiquetasContainer2"></div>
+
+</body>
+
+<script src="../index.js"></script>
+<script src="./etiquetas2.js"></script>
+<script>
+
+    function generatePrint2() {
+    document.getElementById(`boton-Impresion`).style.display = "none";
+    document.getElementById(`header2`).style.display = "none";
+    window.print();
+    setTimeout(function() {
+    document.getElementById(`boton-Impresion`).style.display = "block";
+    document.getElementById(`header2`).style.display = "block";
+    }, 3000);
+}
+function quitarDescuento2(e, num) {
+        e.preventDefault(); // La D en mayúscula
+        document.getElementById(`container-descuento${num}`).style.display = "none";
+        document.getElementById(`price${num}`).style.display = "none";
+        document.getElementById(`btn-quitar-descuento${num}`).style.display = "none";
+        document.getElementById(`btn-agregar-descuento${num}`).style.display = "block";
+    }
+
+    function agregarDescuento2(e, num) {
+        e.preventDefault(); // La D en mayúscula
+        document.getElementById(`container-descuento${num}`).style.display = "block";
+        document.getElementById(`price${num}`).style.display = "block";
+        document.getElementById(`btn-quitar-descuento${num}`).style.display = "block";
+        document.getElementById(`btn-agregar-descuento${num}`).style.display = "none";
+    }
+  
+
+</script>
+</body>
+
+</html>

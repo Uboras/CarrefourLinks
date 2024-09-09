@@ -1,0 +1,73 @@
+/* Contenedor principal */
+.label-containera4 {
+    
+    display: flex;
+    min-height: 80vh;
+    padding: 4px;
+    
+    border: 4px solid black;
+    width: 100%;
+    
+    border-radius: 24px;
+    text-align: center;
+
+}
+.labeldescuento{
+font-size: 30px;
+}
+/* Encabezado de "CONSUMO INMEDIATO" */
+.Liquidaciona4 {
+
+    margin: 15px 15px;
+    font-size: 60px;
+}
+
+/* Título editable */
+.titlea4 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+/* Caja de descuento */
+.discount-boxa4 {
+    border: 2px solid black;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 16px;
+}
+
+.discounta4 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+.discount-pricea4 {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pricea4 {
+    margin: 20px auto;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.small-texta4 {
+    font-size: 14px;
+}
+
+/* Precio regular */
+.regular-pricea4 {
+    display: inline-block;
+    padding: 5px;
+
+}
+
+.price-regulara4 {
+    font-size: 30px;
+}

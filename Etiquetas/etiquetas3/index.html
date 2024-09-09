@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Etiqueta de Precio</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+    <header id="header3">
+        <section>
+            <div class="membrete">
+                <div class="membrete-name">
+                    <h3>Hernán Manera Dev</h3>
+
+                </div>
+                <div class="empresa-info">
+                    <p>3 Precios por hoja</p>
+                    <p>Consumo Inmediato</p>
+
+                </div>
+            </div>
+        </section>
+    </header>
+    <div id="btnOcultos13">
+        <div class="contenedor-salir-imprimir" style="display: flex;flex-direction: row;gap: 20px;">
+            <button id="boton-Impresion" type="button" onclick="generatePrint3()">Imprimir / guardar pdf</button>
+            <button id="boton-Impresion" type="button" onclick="salir()">Salir</button>
+        </div>
+    </div>
+    <div id="etiquetasContainer3"></div>
+
+</body>
+
+<script src="../index.js"></script>
+<script src="./etiquetas3.js"></script>
+<script>
+    function generatePrint3() {
+        document.getElementById(`btnOcultos13`).style.display = "none";
+        document.getElementById(`header3`).style.display = "none";
+        window.print();
+        setTimeout(function () {
+            document.getElementById(`btnOcultos13`).style.display = "block";
+            document.getElementById(`header3`).style.display = "block";
+        }, 3000);
+
+    }
+    function quitarDescuento3(e, num) {
+        e.preventDefault(); // La D en mayúscula
+        document.getElementById(`container-descuento${num}`).style.display = "none";
+        document.getElementById(`price${num}`).style.display = "none";
+        document.getElementById(`btn-quitar-descuento${num}`).style.display = "none";
+        document.getElementById(`btn-agregar-descuento${num}`).style.display = "block";
+    }
+
+    function agregarDescuento3(e, num) {
+        e.preventDefault(); // La D en mayúscula
+        document.getElementById(`container-descuento${num}`).style.display = "block";
+        document.getElementById(`price${num}`).style.display = "block";
+        document.getElementById(`btn-quitar-descuento${num}`).style.display = "block";
+        document.getElementById(`btn-agregar-descuento${num}`).style.display = "none";
+    }
+</script>
+</body>
+
+</html>

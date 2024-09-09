@@ -1,3 +1,5 @@
+@import url('../styles.css');
+@import url("./cardEtiquetas.css");
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -15,26 +17,34 @@ body {
 }
 #etiquetas {
     width: 80%;
-    margin: 15px auto;
+    margin: 5px auto;
     height: auto;
-    display: flex;
+    display: block;
 }
+
 /* Contenedor del formulario */
 .form-container {
+    
+    flex-direction: row;
     background: radial-gradient(circle, #ffffff 30%, #f0f0f0 100%);
     border: 2px solid #e0e0e0;
-    width: 50%;
-    max-width: 600px;
+    max-width: 60%;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+@media (max-width: 768px){
+    .form-container {
+        max-width: 90%;
+    }
+}
 /* Agrupación de elementos del formulario */
 .form-group {
+    
     margin-bottom: 16px;
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 
 /* Estilo para inputs y textareas */
@@ -105,7 +115,7 @@ body {
 }
 
 .price-regular {
-    font-size: 24px;
+    font-size: 20px;
 
 }
 
@@ -227,3 +237,9 @@ body {
     outline: none;
     box-shadow: 0 0 0 4px rgba(25, 118, 210, 0.4); /* Efecto de enfoque */
 }
+.contenedor-salir-imprimir{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+   }
