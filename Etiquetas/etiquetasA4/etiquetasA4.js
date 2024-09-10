@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="small-texta4" contenteditable="true" id="labelMaxUnits${etiquetaCounter}"></div>
                         </div>
                     </div>
-                <div style="display: flex; margin:40px auto ; justify-content: space-around;">
+                <div style="display: flex; margin:60px auto ; justify-content: space-around;">
                     <div id="container-descuento${etiquetaCounter}" class="discount-boxa4">
                         <div class="discounta4" id="labelDiscount${etiquetaCounter}" contenteditable="true"> </div>
                         <div class="labeldescuento">DESCUENTO</div>
