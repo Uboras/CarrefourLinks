@@ -157,8 +157,9 @@ function mostrarEnlaces() {
 
 
     linkDiv.addEventListener("click", function () {
-      window.location.href = enlace.content;
-    });
+      window.open(enlace.content, '_blank');
+  });
+  
     contenedorBotonNombre.appendChild(nombreElement);
     linkDiv.appendChild(svg);
     linkDiv.appendChild(plataform);
