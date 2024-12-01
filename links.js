@@ -3,6 +3,21 @@ const fondo = "blue";
 const dataMatrix = [
   {
     content:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfY41aHlsXRNVQs_hVqIfLQKzGsZ5B3ckJKRE-G--74ie0-_g/viewform",
+    title: "Productos activos y sin precio",
+    img: "./assets/fondo.jfif",
+    plataform: "Celulares y Pc",
+  },
+
+  {
+    content:
+      "https://forms.gle/x15t9oBErY1jfWvh8",
+    title: "NUEVO FORMULARIO UNIFICADO BEBIDAS-MARCA CARREFOUR-BULNEZ",
+    img: "./assets/fondo.jfif",
+    plataform: "Celulares y Pc",
+  },
+  {
+    content:
       "https://docs.google.com/forms/d/e/1FAIpQLSfz_CdCLjbi_Sbjh5KVv2a1BqoLLNuQWpc5sKNTTTgshPofCg/viewform",
     title: "Formulario PFT",
     img: "./assets/fondo.jfif",
