@@ -37,7 +37,7 @@ const dataMatrix = [
     img: "./assets/fondo.jfif",
     plataform: "Celulares y Pc",
   },
-  {
+  
   {
     content:
       "https://docs.google.com/forms/d/e/1FAIpQLSfY41aHlsXRNVQs_hVqIfLQKzGsZ5B3ckJKRE-G--74ie0-_g/viewform",
