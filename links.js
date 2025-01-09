@@ -12,9 +12,9 @@ const dataMatrix = [
   {
     content:
       "https://forms.gle/x15t9oBErY1jfWvh8",
-    title: "NUEVO FORMULARIO UNIFICADO BEBIDAS-MARCA CARREFOUR-BULNEZ",
+    title: "Unificado bebida-marca Carrefour-Bulnes",
     img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
+    plataform: "Solo Pc",
   },
   {
     content:
@@ -25,7 +25,7 @@ const dataMatrix = [
   },
   {
     content:
-      "https://docs.google.com/forms/d/12Ua3a5JGHZMDenMAa8MCA6Pr7zZ10rRnAJBEue6wL-o/edit",
+      "https://www.google.com/url?q=http://10.94.164.15:16000/pch/app/login&source=gmail&ust=1736510854998000&usg=AOvVaw3MO3Tcx22ajYVNxkB3LAXI",
     title: "Próximo Vto. Todos los días",
     img: "./assets/fondo.jfif",
     plataform: "Celulares y Pc",
@@ -38,29 +38,10 @@ const dataMatrix = [
     plataform: "Celulares y Pc",
   },
   {
-    content:
-      "https://docs.google.com/forms/d/1YCbIKHxhz2ddark1U4fqWftVHtn75pZW5EtkTa1wIuw/edit",
-    title: "Marca propia: sábados a lunes",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
   {
     content:
       "https://docs.google.com/forms/d/e/1FAIpQLSfY41aHlsXRNVQs_hVqIfLQKzGsZ5B3ckJKRE-G--74ie0-_g/viewform",
     title: "Productos inactivos",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-  {
-    content:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfz_CdCLjbi_Sbjh5KVv2a1BqoLLNuQWpc5sKNTTTgshPofCg/viewform",
-    title: "Panadería y fiambres",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-  {
-    content: "https://forms.gle/jSKSWfE83e1mjD3v9",
-    title: "Vto 30-60-90",
     img: "./assets/fondo.jfif",
     plataform: "Celulares y Pc",
   },
