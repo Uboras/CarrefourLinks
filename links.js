@@ -38,14 +38,6 @@ const dataMatrix = [
   },
   {
     content:
-      "https://docs.google.com/forms/d/1tmRO9C1NIWhbb6rn6nXEwD9yamqHouxg5uetzrP1eNE/edit",
-    title: "Bebidas Sábados a lunes",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-  
-  {
-    content:
       "https://docs.google.com/forms/d/e/1FAIpQLSfY41aHlsXRNVQs_hVqIfLQKzGsZ5B3ckJKRE-G--74ie0-_g/viewform",
     title: "Productos inactivos",
     img: "./assets/fondo.jfif",
