@@ -18,7 +18,7 @@ const dataMatrix = [
   {
     content:
       "https://forms.gle/x15t9oBErY1jfWvh8",
-    title: "Unificado bebida-marca Carrefour-Bulnes",
+    title: "Unificado bebida-marcaCarrefour Bulnes",
     img: "./assets/fondo.jfif",
     plataform: "Solo Pc",
   },
@@ -37,21 +37,8 @@ const dataMatrix = [
     plataform: "Celulares y Pc",
   },
   {
-    content:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfY41aHlsXRNVQs_hVqIfLQKzGsZ5B3ckJKRE-G--74ie0-_g/viewform",
-    title: "Productos inactivos",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-  {
     content: "https://forms.gle/EUvSbrhKaSo7q7dg9",
     title: "Rescate - donación",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-  {
-    content: "https://drive.google.com/drive/u/0/folders/0AFqugPXOPe6AUk9PVA",
-    title: "Contactos Frecuentes",
     img: "./assets/fondo.jfif",
     plataform: "Celulares y Pc",
   },
@@ -86,20 +73,8 @@ const dataMatrix = [
     plataform: "Solo  Pc",
   },
   {
-    content: "http://10.22.176.13/promo_garantizada/tiendas/index.php",
-    title: "Promo Garantizada",
-    img: "./assets/fondo.jfif",
-    plataform: "Solo en Pc",
-  },
-  {
     content: "http://10.94.164.15:21000/cupones/cupones.do",
     title: "Consulta de Cupones",
-    img: "./assets/fondo.jfif",
-    plataform: "Solo en Pc",
-  },
-  {
-    content: "http://10.94.164.210:10000/stl/app/secure",
-    title: "STL",
     img: "./assets/fondo.jfif",
     plataform: "Solo en Pc",
   }
