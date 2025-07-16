@@ -1,46 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family:MedievalSharp&family:Playwrite+ES:wght@100..400&display:swap');
+
 /* Reset CSS Básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.html{
+
+.html {
     margin: auto;
-    
+
 }
-body{
-    margin: auto;
-   width: 100%; 
+
+body {
+    display: block;
+    min-height: 100dvh;
+    margin-bottom: 0px;
     border: 5px solid white;
-    min-height:100dvh;
+
 }
-.links{
+
+.cuerpo {
+    display: flex;
+    flex-direction: row;
+    margin: 0PX AUTO;
+    width: 100%;
+
+
+}
+
+.links {
     position: relative;
-    padding: 15px 0px;
+    padding: 10px 0px;
     background-color: grey;
+    border-radius: 0PX 15PX 0PX 0PX;
     border: 15px solid #333;
 }
+
 /* Estilo para el encabezado */
 header {
+    padding: 10px;
+    min-width: 180px;
+    max-width: 20%;
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 0px 0px 0px;
 }
+
 /*Membrete*/
 .membrete {
-    padding: 2px 4px;
-    width: 90%;
-    display: inline-flex;
+    padding-top: 40px;
+    width: 100%;
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
+    margin: 0PX auto;
 }
 
-.membrete-name>h3 {
-    margin: 2px;
+.membrete-img {
+    height: fit-content;
+    width: 150px;
+    margin: 10px;
+}
+
+.membrete-img > img {
+    border: 5px solid rgb(151, 151, 153);
+    width: 100%;
+    margin: auto;
+    border-radius: 50%;
 }
 
 .membrete-name>h5 {
@@ -57,17 +86,18 @@ header {
 
 #links-container {
     width: 100%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: space-around;
 
 }
 
 /* Estilo para la clase de tarjeta */
 .card {
     background-color: #d6cece;
-    width: 300px;
+    width: 250px;
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -88,23 +118,24 @@ header {
     height: calc(35%);
     width: 100%;
     background-color: rgba(63, 119, 238, 0.3);
-    
+
 }
-.plataform{
-    
+
+.plataform {
+
     border-radius: 8px;
     padding: 4px 8px;
     font-size: 20px;
     color: rgb(238, 231, 231);
     background-color: #255cd1;
     position: absolute;
-    
+
     top: 0;
-    left: 0 ;
+    left: 0;
 }
 
 
-.contenedor-blur >p {
+.contenedor-blur>p {
     font-family: "Playwrite ES", cursive;
     font-weight: 600;
     font-style: normal;
@@ -124,17 +155,28 @@ header {
 
 /* Cambiar a una sola tarjeta por ancho cuando la pantalla es menor a 700px */
 @media screen and (max-width: 700px) {
-    .membrete{
+
+    header {
+        max-width: 100%;
+        width: 100%;
         font-size: 14px;
+        border-radius: 15px 15px 0px 0PX;
+        padding: 10px;
+
     }
 
     .card {
-        height: 250px;
+        height: 300px;
         gap: 0;
-        width: 250px;
+        width: 300px;
         display: block;
     }
-    .contenedor-blur > p {
+
+    .links {
+        border-radius: 0%;
+    }
+
+    .contenedor-blur>p {
         font-weight: 800;
         position: absolute;
         top: -10px;
@@ -143,27 +185,34 @@ header {
         color: #272727;
         text-shadow: 2px 2px 2px #ccc;
     }
-    
-     body{
+
+    .cuerpo {
+        display: block;
         width: 100%;
-}
+        border-radius:
+            0PX;
+    }
 
 }
-.borde-interior_superior, .borde-interior_inferior{
+
+.borde-interior_superior,
+.borde-interior_inferior {
     width: 100%;
     height: 20px;
     background-color: grey;
     position: absolute;
 }
 
-.borde-interior_superior{
+.borde-interior_superior {
     top: -8px;
     border-radius: 15px;
 }
-.borde-interior_inferior{
+
+.borde-interior_inferior {
     bottom: -8px;
-    border-radius:15px;
+    border-radius: 15px;
 }
+
 /* Estilos para el footer */
 footer {
     height: 10dvh;
@@ -183,6 +232,7 @@ footer {
 .footer-container p {
     margin: 0 15px;
 }
+
 /* Estilo por defecto */
 .path-red {
     transition: transform 0.3s ease;
@@ -196,49 +246,64 @@ footer {
 
 /* Hover animations */
 .svg-container:hover .path-red {
-    fill: #FF5733; 
+    fill: #FF5733;
 }
-.svg-container{
+
+.svg-container {
     position: absolute;
     top: 20%;
     left: 25%;
     align-items: center;
 }
+
 .svg-container:hover {
 
-    animation: 1s ease  forwards scale 1;
+    animation: 1s ease forwards scale 1;
 }
+
 .svg-text::after {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    content : "Express";
+    content: "Express";
     color: #0056b3;
     font: 2em sans-serif;
     text-shadow: 2px 2px 2px black;
 }
-.svg-text{
-position: absolute;
-top:18%;
-visibility: hidden;
-border-radius: 8px;
-padding: 4px;
-background-color:rgba(58, 58, 221, 0.1);
+
+.svg-text {
+    position: absolute;
+    top: 18%;
+    visibility: hidden;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: rgba(58, 58, 221, 0.1);
 }
-.svg-container:hover .svg-text{
-animation: 1s ease forwards aparecer 0.3s;
+
+.svg-container:hover .svg-text {
+    animation: 1s ease forwards aparecer 0.3s;
 }
-@keyframes scale{
-    0%{}
-    to{ scale:1.4;}
+
+@keyframes scale {
+    0% {}
+
+    to {
+        scale: 1.4;
+    }
 
 }
+
 @keyframes aparecer {
-    0%{scale: 0.1;}
-    to{ 
+    0% {
+        scale: 0.1;
+    }
+
+    to {
         visibility: visible;
-        scale: 1.1;}
-    
+        scale: 1.1;
+    }
+
 }
+
 .svg-container:hover .path-blue {
-    fill: #FF5733; 
+    fill: #FF5733;
 
 }
