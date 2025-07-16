@@ -25,13 +25,15 @@ body {
     flex-direction: row;
     margin: 0PX AUTO;
     width: 100%;
-
+     background-color: #333;
 
 }
 
 .links {
+    margin: 10PX 0px;
+    margin-bottom: 0PX;
     position: relative;
-    padding: 10px 0px;
+    padding: 20px 0px;
     background-color: grey;
     border-radius: 0PX 15PX 0PX 0PX;
     border: 15px solid #333;
@@ -45,7 +47,7 @@ header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    border-radius: 15px 0px 0px 0px;
+    border-radius: 15px 15px 10px 10px;
 }
 
 /*Membrete*/
@@ -55,7 +57,7 @@ header {
     display: inline-block;
     justify-content: space-between;
     align-items: center;
-    font-size: 24px;
+    font-size: 18px;
     margin: 0PX auto;
 }
 
@@ -86,7 +88,7 @@ header {
 
 #links-container {
     width: 100%;
-
+    margin: 5dvh auto; ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -144,7 +146,7 @@ header {
     position: absolute;
     top: 0px;
     left: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: #272727;
     text-shadow: 3px 3px 2px #ccc;
 }
@@ -164,12 +166,19 @@ header {
         padding: 10px;
 
     }
+    .membrete {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
     .card {
-        height: 300px;
-        gap: 0;
-        width: 300px;
+        width: 40%;
+        height: 200px;
         display: block;
+        margin: 10px;
     }
 
     .links {
@@ -181,16 +190,16 @@ header {
         position: absolute;
         top: -10px;
         left: px;
-        font-size: 24px;
+        font-size: 16px;
         color: #272727;
         text-shadow: 2px 2px 2px #ccc;
     }
 
     .cuerpo {
+
         display: block;
         width: 100%;
-        border-radius:
-            0PX;
+        border-radius:0PX;
     }
 
 }
@@ -215,10 +224,10 @@ header {
 
 /* Estilos para el footer */
 footer {
-    height: 10dvh;
+    height: 5dvh;
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     border-radius: 0px 0px 10px 10px;
 }

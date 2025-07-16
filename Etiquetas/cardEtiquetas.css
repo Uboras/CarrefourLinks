@@ -1,10 +1,54 @@
+.membrete {
+    padding-top: 40px;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin: 0PX auto;
+}
+.linksEtiquetas{
+    margin: 10PX 0px;
+    margin-top: 0PX;
+    margin-bottom: 0PX;
+    position: relative;
+    padding: 20px 0px;
+    background-color: grey;
+    border: 15px solid #333;
+}
+.membrete-img {
+    height: fit-content;
+    width: 150px;
+    margin: 10px;
+}
+
+.membrete-img > img {
+    border: 5px solid rgb(151, 151, 153);
+    width: 100%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.membrete-name>h5 {
+    margin: 2px;
+}
+
+.empresa-info-etiquetas {
+    text-align: right;
+}
+
+.empresa-info-etiquetas>p {
+    margin: 2px;
+    
+}
+
 /* Contenedor de las tarjetas */
 .container-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
+    justify-content: space-around;
+   font-size: 16px;
+       
 }
 
 /* Tarjeta individual */
@@ -20,9 +64,7 @@ position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 @media (max-width:768px) {
-    .container-card {
-        
-    }
+   
     .card-etiquetas {
     margin: 10px auto;
     min-width: 27%;
@@ -95,10 +137,41 @@ position: relative;
     font-size: 20px;
     left: -10%;
     }
+     header {
+        max-width: 100%;
+        width: 100%;
+        font-size: 14px;
+        border-radius: 15px 15px 0px 0PX;
+        padding: 10px;
+
+    }
+    .membrete {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 14px;
+    }
 }
 @media (min-width:1020px) {
     #texto-Proximamente{
     font-size: 24px;
     left: 10%;
+    }
+     header {
+        max-width: 100%;
+        width: 100%;
+        font-size: 14px;
+        border-radius: 15px 15px 0px 0PX;
+        padding: 10px;
+        padding-bottom: 0%;
+    }
+    .membrete {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 }
