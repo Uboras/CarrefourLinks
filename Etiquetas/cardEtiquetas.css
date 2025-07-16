@@ -1,10 +1,21 @@
-.membrete {
-    padding-top: 40px;
+ header {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    display: inline-block;
+   
+        border-radius: 15px 15px 0px 0PX;
+        padding: 10px;
+
+    }
+.membrete {
+    max-width: 100%;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
     margin: 0PX auto;
 }
 .linksEtiquetas{
@@ -64,7 +75,15 @@ position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 @media (max-width:768px) {
-   
+        header {
+        max-width: 100%;
+        width: 100%;
+        font-size: 14px;
+        border-radius: 15px 15px 0px 0PX;
+        padding: 10px;
+
+    }
+    
     .card-etiquetas {
     margin: 10px auto;
     min-width: 27%;
@@ -154,7 +173,7 @@ position: relative;
         font-size: 14px;
     }
 }
-@media (min-width:1020px) {
+@media (max-width:1020px) {
     #texto-Proximamente{
     font-size: 24px;
     left: 10%;
