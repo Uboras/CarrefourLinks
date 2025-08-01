@@ -94,18 +94,18 @@ function mostrarEnlaces() {
     plataform.innerHTML = enlace.plataform;
     plataform.classList.add("plataform");
 
-    var svg = document.createElement("img");
+    /*var svg = document.createElement("img");
     svg.src = "./Assets/imagenes/Carrefour512.png";
     svg.height= "250" ;
     svg.style.borderRadius = "8px";
 
-
+*/
     linkDiv.addEventListener("click", function () {
       window.open(enlace.content, '_blank');
   });
   
     contenedorBotonNombre.appendChild(nombreElement);
-    linkDiv.appendChild(svg);
+    //linkDiv.appendChild(svg);
     linkDiv.appendChild(plataform);
     linkDiv.appendChild(contenedorBotonNombre);
     container.appendChild(linkDiv);

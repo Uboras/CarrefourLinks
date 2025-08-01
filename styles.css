@@ -110,8 +110,10 @@ header {
     box-shadow: 4px 4px 4px black;
     cursor: pointer;
     overflow: hidden;
-
-}
+background-image: url("./Assets/imagenes/Carrefour512.png");
+background-position:center ;
+background-size: cover;
+;}
 
 
 .contenedor-blur {
@@ -150,7 +152,7 @@ header {
     left: 10px;
     font-size: 18px;
     color: #272727;
-    text-shadow: 1px 1px 1px #ccc;
+    text-shadow: 1px 1px 1px #7f7e81;
 }
 
 .contenedor-blur button:hover {
