@@ -10,7 +10,7 @@ const dataMatrix = [
   {
     content:
       "https://docs.google.com/forms/d/e/1FAIpQLSfY41aHlsXRNVQs_hVqIfLQKzGsZ5B3ckJKRE-G--74ie0-_g/viewform",
-    title: "Productos activos y sin precio",
+    title: "Productos activos sin precio",
     img: "./assets/fondo.jfif",
     plataform: "Celulares y Pc",
   },
@@ -18,7 +18,7 @@ const dataMatrix = [
   {
     content:
       "https://forms.gle/x15t9oBErY1jfWvh8",
-    title: "Unificado bebida-marcaCarrefour Bulnes",
+    title: "bebidas Carrefour Bulnes",
     img: "./assets/fondo.jfif",
     plataform: "Solo Pc",
   },

@@ -94,11 +94,14 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 
 }
 
 /* Estilo para la clase de tarjeta */
 .card {
+    
     background-color: #d6cece;
     width: 250px;
     height: 250px;
@@ -113,10 +116,32 @@ header {
 background-image: url("./Assets/imagenes/Carrefour512.png");
 background-position:center ;
 background-size: cover;
-;}
+}
+.card:hover{
+    animation: sacudir 0.5s infinite;
+}
+@keyframes sacudir {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg);}
+}
 
+.card:hover .contenedor-blur{
+    height: calc(80%);
 
+    transition: all 1s ease;
+
+}
+.card:hover .contenedor-blur>p{
+
+    font-size: 30px;
+    transition: all 1s ease;
+
+}
 .contenedor-blur {
+    
     border-radius: 4px;
     position: absolute;
     bottom: 0px;
@@ -143,14 +168,13 @@ background-size: cover;
 
 .contenedor-blur>p {
     font-family: "Playwrite ES", cursive;
-    font-weight: 600;
-    font-style: normal;
-    padding: 8px;
-    margin: 8px auto;
+    font-style: italic;
+    padding: 4px;
+    margin: 4px auto;
     position: absolute;
     top: 0px;
     left: 10px;
-    font-size: 18px;
+    font-size: 24px;
     color: #272727;
     text-shadow: 1px 1px 1px #7f7e81;
 }
@@ -188,13 +212,18 @@ background-size: cover;
     .links {
         border-radius: 0%;
     }
+    .contenedor-blur{
+    height: calc(80%);
+   transition: all 1s ease;
+
+}
 
     .contenedor-blur>p {
         font-weight: 800;
         position: absolute;
         top: -10px;
         left: px;
-        font-size: 16px;
+    font-size: 30px;
         color: #272727;
         text-shadow: 2px 2px 2px #ccc;
     }
