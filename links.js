@@ -1,116 +1,30 @@
-// Array de enlaces
-const fondo = "blue";
 const dataMatrix = [
-   {
-    content: "https://forms.gle/bMcAcBVgDLGcn9Dj9",
-    title: "Link nuevo -PAS-",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-  {
-    content:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfY41aHlsXRNVQs_hVqIfLQKzGsZ5B3ckJKRE-G--74ie0-_g/viewform",
-    title: "Productos activos sin precio",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-
-  {
-    content:
-      "https://forms.gle/x15t9oBErY1jfWvh8",
-    title: "bebidas Carrefour Bulnes",
-    img: "./assets/fondo.jfif",
-    plataform: "Solo Pc",
-  },
-  {
-    content:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfz_CdCLjbi_Sbjh5KVv2a1BqoLLNuQWpc5sKNTTTgshPofCg/viewform",
-    title: "Formulario PFT",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-  {
-    content:
-      "https://www.google.com/url?q=http://10.94.164.15:16000/pch/app/login&source=gmail&ust=1736510854998000&usg=AOvVaw3MO3Tcx22ajYVNxkB3LAXI",
-    title: "Próximo Vto. Todos los días",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-  {
-    content: "https://forms.gle/EUvSbrhKaSo7q7dg9",
-    title: "Rescate - donación",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-  {
-    content: "https://www.ohgiftcard.com.ar/",
-    title: "Consulta GiftCard",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-  {
-    content: "https://inccarrefourarg2021.my.salesforce.com/",
-    title: "SALESFORCE",
-    img: "./assets/fondo.jfif",
-    plataform: "Celulares y Pc",
-  },
-  {
-    content: "https://gtickets.carrefour.com.ar/frontend/",
-    title: "Busqueda tickets caja",
-    img: "./assets/fondo.jfif",
-    plataform: "Solo Pc",
-  },
-  {
-    content: "./Etiquetas/index.html",
-    title: "Etiquetas Liquidación",
-    img: "./assets/fondo.jfif",
-    plataform: "Solo Pc",
-  },
-  {
-    content: "http://10.22.176.13/cajas_oym/",
-    title: "Portal de OyM",
-    img: "./assets/fondo.jfif",
-    plataform: "Solo  Pc",
-  },
-  {
-    content: "http://10.94.164.15:21000/cupones/cupones.do",
-    title: "Consulta de Cupones",
-    img: "./assets/fondo.jfif",
-    plataform: "Solo en Pc",
-  }
+  { title: "Link nuevo - PAS", content: "https://forms.gle/bMcAcBVgDLGcn9Dj9", plataform: "Celulares y PC" },
+  { title: "Productos activos sin precio", content: "https://docs.google.com/forms/d/e/1FAIpQLSfY41aHlsXRNVQs_hVqIfLQKzGsZ5B3ckJKRE-G--74ie0-_g/viewform", plataform: "Celulares y PC" },
+  { title: "Bebidas Carrefour Bulnes", content: "https://forms.gle/x15t9oBErY1jfWvh8", plataform: "Solo PC" },
+  { title: "Formulario PFT", content: "https://docs.google.com/forms/d/e/1FAIpQLSfz_CdCLjbi_Sbjh5KVv2a1BqoLLNuQWpc5sKNTTTgshPofCg/viewform", plataform: "Celulares y PC" },
+  { title: "Próximo Vto.", content: "http://10.94.164.15:16000/pch/app/login", plataform: "Celulares y PC" },
+  { title: "Rescate - Donación", content: "https://forms.gle/EUvSbrhKaSo7q7dg9", plataform: "Celulares y PC" },
+  { title: "Consulta GiftCard", content: "https://www.ohgiftcard.com.ar/", plataform: "Celulares y PC" },
+  { title: "Salesforce", content: "https://inccarrefourarg2021.my.salesforce.com/", plataform: "Celulares y PC" },
+  { title: "Tickets Caja", content: "https://gtickets.carrefour.com.ar/frontend/", plataform: "Solo PC" },
+  { title: "Etiquetas Liquidación", content: "./Etiquetas/index.html", plataform: "Solo PC" },
+  { title: "Portal OYM", content: "http://10.22.176.13/cajas_oym/", plataform: "Solo PC" },
+  { title: "Consulta Cupones", content: "http://10.94.164.15:21000/cupones/cupones.do", plataform: "Solo PC" }
 ];
 
-// Función para recorrer los enlaces y mostrarlos en el HTML
-function mostrarEnlaces() {
-  var container = document.getElementById("links-container");
-  dataMatrix.forEach(function (enlace) {
-    var linkDiv = document.createElement("div");
-    linkDiv.classList.add("card"); // Agregar la clase de tarjeta al contenedor
-    var contenedorBotonNombre = document.createElement("div");
-    contenedorBotonNombre.classList.add("contenedor-blur");
-    var nombreElement = document.createElement("p");
-    nombreElement.textContent = enlace.title;
-    var plataform = document.createElement("p");
-    plataform.innerHTML = enlace.plataform;
-    plataform.classList.add("plataform");
+const container = document.getElementById("links-container");
 
-    /*var svg = document.createElement("img");
-    svg.src = "./Assets/imagenes/Carrefour512.png";
-    svg.height= "250" ;
-    svg.style.borderRadius = "8px";
+dataMatrix.forEach(link => {
+  const card = document.createElement("div");
+  card.className = "card";
+  card.innerHTML = `
+    <span class="badge">${link.plataform}</span>
+    <i class="fa-solid fa-link"></i>
+    <h3>${link.title}</h3>
+    <span>Acceso rápido</span>
+  `;
 
-*/
-    linkDiv.addEventListener("click", function () {
-      window.open(enlace.content, '_blank');
-  });
-  
-    contenedorBotonNombre.appendChild(nombreElement);
-    //linkDiv.appendChild(svg);
-    linkDiv.appendChild(plataform);
-    linkDiv.appendChild(contenedorBotonNombre);
-    container.appendChild(linkDiv);
-  });
-}
-
-// Ejecutar la función para mostrar los enlaces
-mostrarEnlaces();
+  card.onclick = () => window.open(link.content, "_blank");
+  container.appendChild(card);
+});

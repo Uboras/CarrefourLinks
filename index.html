@@ -1,59 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="icon" href="computer.png" />
-    <link rel="apple-touch-icon" href="computer.png" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSK3TZ48DL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrefour Links</title>
 
-        gtag('config', 'G-QSK3TZ48DL');
-    </script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="computer.png" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body>
-    <div class="cuerpo">
 
-        <header>
-            <section>
-                <div class="membrete">
-                    <div class="membrete-img">
-                        <img src="./Assets/AVATAR192.png" />
-                    </div>
-                    <div class="empresa-info">
-                        <h3>ManeDev</h3>
-                        <h4>www.manedev.site</h4>
-                        <h5>Desarollos Tecnológicos</h5>
-                        <p>manedevsolution@gmail.com</p>
-      <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=hernan-manera-62312682" target="_blank">Follow on LinkedIn</a>
-
-                    </div>
-                </div>
-            </section>
-        </header>
-        <div class="links">
-            <div class="borde-interior_superior"></div>
-            <div id="links-container"></div>
-            <div class="borde-interior_inferior"></div>
-        </div>
+<header class="topbar">
+  <div class="brand">
+    <img src="./Assets/AVATAR192.png" />
+    <div>
+      <h1>Carrefour Links</h1>
+      <span>by ManeDev</span>
     </div>
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2024-2025 ManeDev.</p>
-        </div>
-    </footer>
+  </div>
 
-    <script src="./links.js"></script>
+  <input id="search" type="text" placeholder="Buscar link..." />
+</header>
 
+<main class="cards-container" id="links-container"></main>
+
+<footer>
+  © 2024–2025 ManeDev
+</footer>
+
+<script src="./links.js"></script>
 </body>
-
-
 </html>

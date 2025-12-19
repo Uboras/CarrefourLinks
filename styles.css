@@ -1,367 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family:MedievalSharp&family:Playwrite+ES:wght@100..400&display:swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
-/* Reset CSS Básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.html {
-    margin: auto;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: block;
-    min-height: 100dvh;
-    margin-bottom: 0px;
-    border: 5px solid white;
-
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  min-height: 100vh;
+  color: #1f2937;
 }
 
-.cuerpo {
-    display: flex;
-    flex-direction: row;
-    margin: 0PX AUTO;
-    width: 100%;
-     background-color: #333;
-
+/* ===== HEADER ===== */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
 }
 
-.links {
-    margin: 10PX 0px;
-    margin-bottom: 0PX;
-    position: relative;
-    padding: 20px 0px;
-    background-color: grey;
-    border-radius: 0PX 15PX 0PX 0PX;
-    border: 15px solid #333;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-/* Estilo para el encabezado */
-header {
-    padding: 10px;
-    min-width: 180px;
-    max-width: 30%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 15px 15px 10px 10px;
+.brand img {
+  width: 55px;
+  border-radius: 50%;
 }
 
-/*Membrete*/
-.membrete {
-    padding-top: 40px;
-    width: 100%;
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    margin: 0PX auto;
+.brand h1 {
+  font-size: 20px;
 }
 
-.membrete-img {
-    height: fit-content;
-    width: 150px;
-    margin: 10px;
+.brand span {
+  font-size: 12px;
+  opacity: 0.7;
 }
 
-.membrete-img > img {
-    border: 5px solid rgb(151, 151, 153);
-    width: 100%;
-    margin: auto;
-    border-radius: 50%;
+#search {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: none;
+  width: 220px;
+  outline: none;
 }
 
-.membrete-name>h5 {
-    margin: 2px;
+/* ===== GRID ===== */
+.cards-container {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
 }
 
-.empresa-info {
-    text-align: right;
-}
-
-.empresa-info>p {
-    margin: 2px;
-}
-
-#links-container {
-    overflow: hidden;
-    width: 100%;
-    margin: 5dvh auto; ;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-
-}
-
-/* Estilo para la clase de tarjeta */
+/* ===== CARD ===== */
 .card {
-    
-    background-color: #d6cece;
-    width: 250px;
-    height: 250px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin: 5px;
-    box-sizing: border-box;
-    position: relative;
-    box-shadow: 4px 4px 4px black;
-    cursor: pointer;
-    overflow: hidden;
-background-image: url("./Assets/imagenes/Carrefour512.png");
-background-position:center ;
-background-size: cover;
-}
-.card:hover{
-    animation: sacudir 0.5s infinite;
-}
-@keyframes sacudir {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(2deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-2deg); }
-    100% { transform: rotate(0deg);}
+  background: rgba(255,255,255,.75);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease;
+  position: relative;
 }
 
-.card:hover .contenedor-blur{
-    height: calc(80%);
-
-    transition: all 1s ease;
-
-}
-.card:hover .contenedor-blur>p{
-
-    font-size: 30px;
-    transition: all 1s ease;
-
-}
-.contenedor-blur {
-    
-    border-radius: 4px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: calc(35%);
-    width: 100%;
-    background-color: rgba(177, 179, 184 , 0.7);
-
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0,0,0,.15);
 }
 
-.plataform {
-
-    border-radius: 8px;
-    padding: 4px 8px;
-    font-size: 20px;
-    color: rgb(238, 231, 231);
-    background-color: #255cd1;
-    position: absolute;
-
-    top: 0;
-    left: 0;
+.card i {
+  font-size: 34px;
+  margin-bottom: 14px;
+  color: #2563eb;
 }
 
-
-.contenedor-blur>p {
-    font-family: "Playwrite ES", cursive;
-    font-style: italic;
-    padding: 4px;
-    margin: 4px auto;
-    position: absolute;
-    top: 0px;
-    left: 10px;
-    font-size: 24px;
-    color: #272727;
-    text-shadow: 1px 1px 1px #7f7e81;
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
-.contenedor-blur button:hover {
-    background-color: #0056b3;
+.card span {
+  font-size: 13px;
+  opacity: .7;
 }
 
-/* Cambiar a una sola tarjeta por ancho cuando la pantalla es menor a 700px */
-@media screen and (max-width: 700px) {
-
-    header {
-        max-width: 100%;
-        width: 100%;
-        font-size: 14px;
-        border-radius: 15px 15px 0px 0PX;
-        padding: 10px;
-
-    }
-    .membrete {
-        padding: 10px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .card {
-        width: 40%;
-        height: 200px;
-        display: block;
-        margin: 10px;
-    }
-
-    .links {
-        border-radius: 0%;
-    }
-    .contenedor-blur{
-    height: calc(80%);
-   transition: all 1s ease;
-
+/* ===== BADGE ===== */
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #2563eb;
+  color: white;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 20px;
 }
 
-    .contenedor-blur>p {
-        font-weight: 800;
-        position: absolute;
-        top: -10px;
-        left: px;
-    font-size: 30px;
-        color: #272727;
-        text-shadow: 2px 2px 2px #ccc;
-    }
-
-    .cuerpo {
-
-        display: block;
-        width: 100%;
-        border-radius:0PX;
-    }
-
-}
-
-.borde-interior_superior,
-.borde-interior_inferior {
-    width: 100%;
-    height: 20px;
-    background-color: grey;
-    position: absolute;
-}
-
-.borde-interior_superior {
-    top: -8px;
-    border-radius: 15px;
-}
-
-.borde-interior_inferior {
-    bottom: -8px;
-    border-radius: 15px;
-}
-
-/* Estilos para el footer */
+/* ===== FOOTER ===== */
 footer {
-    height: 5dvh;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  opacity: .6;
 }
-
-.footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-container p {
-    margin: 0 15px;
-}
-
-/* Estilo por defecto */
-.path-red {
-    transition: transform 0.3s ease;
-    filter: drop-shadow(5px 5px 5px black);
-}
-
-.path-blue {
-    transition: fill 0.3s ease;
-    filter: drop-shadow(5px 5px 5px black);
-}
-
-/* Hover animations */
-.svg-container:hover .path-red {
-    fill: #FF5733;
-}
-
-.svg-container {
-    position: absolute;
-    top: 20%;
-    left: 25%;
-    align-items: center;
-}
-
-.svg-container:hover {
-
-    animation: 1s ease forwards scale 1;
-}
-
-.svg-text::after {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    content: "Express";
-    color: #0056b3;
-    font: 2em sans-serif;
-    text-shadow: 2px 2px 2px black;
-}
-
-.svg-text {
-    position: absolute;
-    top: 18%;
-    visibility: hidden;
-    border-radius: 8px;
-    padding: 4px;
-    background-color: rgba(58, 58, 221, 0.1);
-}
-
-.svg-container:hover .svg-text {
-    animation: 1s ease forwards aparecer 0.3s;
-}
-
-@keyframes scale {
-    0% {}
-
-    to {
-        scale: 1.4;
-    }
-
-}
-
-@keyframes aparecer {
-    0% {
-        scale: 0.1;
-    }
-
-    to {
-        visibility: visible;
-        scale: 1.1;
-    }
-
-}
-
-.svg-container:hover .path-blue {
-    fill: #FF5733;
-}
-
-.libutton {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 7px;
-          text-align: center;
-          outline: none;
-          text-decoration: none !important;
-          color: #ffffff !important;
-          width: 200px;
-          height: 32px;
-          border-radius: 16px;
-          background-color: #0A66C2;
-          font-family: "SF Pro Text", Helvetica, sans-serif;
-        }
-
