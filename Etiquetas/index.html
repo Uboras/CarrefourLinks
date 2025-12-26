@@ -42,9 +42,9 @@
 <script>
   const tamanos = [
     ["Tamaño A4", "A4", "img1.png"],
-    ["Tamaño 1/2", "12", "img2.png"],
+    /**["Tamaño 1/2", "12", "img2.png"],**/
     ["Tamaño 1/3", "13", "img3.png"],
-    ["Tamaño 1/4", "13", "img4.png"],
+    // ["Tamaño 1/4", "13", "img4.png"],
   ];
 
   let insert = "";
@@ -69,12 +69,6 @@
     `;
 
     insert += temporal;
-
-    // Mostrar "Próximamente" excepto en A4 (0) y 1/3 (2)
-    if (index !== 2 && index !== 0) {
-      insert += `<div id="texto-Proximamente">Próximamente</div>`;
-    }
-
     insert += "</div>";
   });
 
