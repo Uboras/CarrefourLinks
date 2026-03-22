@@ -3,18 +3,6 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-[contenteditable="true"] {
-    outline: none; /* Evita el contorno azul predeterminado */
-    cursor: text; /* Cambia el cursor al pasar sobre el elemento */
-}
-[contenteditable="true"]:empty{
-    background-color: grey;
-    border: 2px solid #0d47a1;
-} 
-[contenteditable="true"]:focus {
-    border-color: #66afe9; /* Cambia el color del borde cuando se enfoca */
-   
-}
 #etiquetas {
     width: 80%;
     margin: 5px auto;
