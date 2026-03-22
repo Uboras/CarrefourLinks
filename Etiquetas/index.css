@@ -67,14 +67,9 @@ body {
     border-radius: 4px;
     border: 1px solid black;
     color: #ffffff;
-    background-color: #1976d2; /* Azul característico de Material Design */
     cursor: pointer;
     margin-bottom: 2px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.form-group {
-    background-color: #1565c0; /* Azul más oscuro al hacer hover */
 }
 
 .form-group{
