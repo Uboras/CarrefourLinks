@@ -78,8 +78,7 @@ body {
 }
 
 .form-group{
-    background-color: #0d47a1; /* Azul aún más oscuro al presionar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 
