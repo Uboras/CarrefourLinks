@@ -40,6 +40,13 @@ body {
     }
 }
 /* Estilo para inputs y textareas */
+.form-group input::placeholder {
+    color:gray;
+    opacity:1;
+}
+input::-webkit-input-placeholder { color: gray; } /* Chrome, Safari */
+input:-ms-input-placeholder { color: gray; }      /* IE */
+input::-ms-input-placeholder { color: gray; }     /* Edge viejo */
 .form-group input,
 .form-group textarea {
     width: 100%;
