@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="form-group">
                         <input placeholder="Cupón" type="text" id="price${etiquetaCounter}" name="price">
-                        <button id="btn-quitar-descuento${etiquetaCounter}" onclick="quitarDescuento3(event,${etiquetaCounter})">Quitar descuento</button>
+                        <button class="badge-button" id="btn-quitar-descuento${etiquetaCounter}" onclick="quitarDescuento3(event,${etiquetaCounter})">Quitar descuento</button>
                         <button style="display: none;" id="btn-agregar-descuento${etiquetaCounter}" onclick="agregarDescuento3(event,${etiquetaCounter})">Agregar descuento</button>
                     </div>
                     <div class="form-group">
