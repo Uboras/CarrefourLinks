@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                     <div class="form-group">
                         <input placeholder="Cupón de descuento" type="text" id="price${etiquetaCounter}" name="price">
-                        <button id="btn-quitar-descuento${etiquetaCounter}" onclick="quitarDescuento(event,${etiquetaCounter})">Quitar descuento</button>
-                        <button style="display: none;" id="btn-agregar-descuento${etiquetaCounter}" onclick="agregarDescuento(event,${etiquetaCounter})">Agregar descuento</button>
+                        <button class="badge-button" id="btn-quitar-descuento${etiquetaCounter}" onclick="quitarDescuento(event,${etiquetaCounter})">Quitar descuento</button>
+                        <button class="badge-button" style="display: none;" id="btn-agregar-descuento${etiquetaCounter}" onclick="agregarDescuento(event,${etiquetaCounter})">Agregar descuento</button>
                     </div>
                     <div class="form-group">
                         <input placeholder="Validez" type="text" id="validity${etiquetaCounter}" name="validity" required>
@@ -67,8 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
                  </div>
                  <div class="form-group">
                      <input placeholder="Cupón de descuento" type="text" id="price${etiquetaCounter}" name="price">
-                     <button id="btn-quitar-descuento${etiquetaCounter}" onclick="quitarDescuento(event,${etiquetaCounter})">Quitar descuento</button>
-                     <button style="display: none;" id="btn-agregar-descuento${etiquetaCounter}" onclick="agregarDescuento(event,${etiquetaCounter})">Agregar descuento</button>
+                     <button class="badge-button" id="btn-quitar-descuento${etiquetaCounter}" onclick="quitarDescuento(event,${etiquetaCounter})">Quitar descuento</button>
+                     <button class="badge-button" style="display: none;" id="btn-agregar-descuento${etiquetaCounter}" onclick="agregarDescuento(event,${etiquetaCounter})">Agregar descuento</button>
                  </div>
                  <div class="form-group">
                      <input placeholder="Validez" type="text" id="validity${etiquetaCounter}" name="validity" required>
