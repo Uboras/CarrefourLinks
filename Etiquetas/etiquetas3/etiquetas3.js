@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <input placeholder="Precio Normal" type="text" id="regularPrice${etiquetaCounter}" name="regularPrice" required>
                     </div>
                     <div class="form-group">
-                        <button type="button" onclick="generateLabel(${etiquetaCounter})">Generar Etiqueta</button>
-                        <button type="button" onclick="Eliminar(${etiquetaCounter})">Eliminar Etiqueta</button>
+                        <button class="badge-button" type="button" onclick="generateLabel(${etiquetaCounter})">Generar Etiqueta</button>
+                        <button class="badge-button" type="button" onclick="Eliminar(${etiquetaCounter})">Eliminar Etiqueta</button>
                     </div>
                 </form>
             </div>
