@@ -110,7 +110,5 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>`;
   suma += form1;
   suma += eti1;
-   document
-    .getElementById("etiquetasContainerA4")
-    .insertAdjacentHTML("beforeend", suma);
+   document.getElementById("etiquetasContainerA4").insertAdjacentHTML("beforeend", suma);
 });
