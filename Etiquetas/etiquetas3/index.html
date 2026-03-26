@@ -46,15 +46,22 @@
 <script src="./etiquetas3.js"></script>
 <script>
     function generatePrint3() {
-        document.getElementById(`btnOcultos13`).style.display = "none";
-        document.getElementById(`header3`).style.display = "none";
-        window.print();
-        setTimeout(function () {
-            document.getElementById(`btnOcultos13`).style.display = "block";
-            document.getElementById(`header3`).style.display = "block";
-        }, 3000);
+    // Simplemente disparamos la impresión
+    window.print();
+}
 
-    }
+// Se ejecuta automáticamente ANTES de abrir el diálogo de impresión
+window.onbeforeprint = function() {
+    document.getElementById(`btnOcultos13`).style.display = "none";
+    document.getElementById('header3').style.display = "none";
+};
+
+// Se ejecuta automáticamente DESPUÉS de cerrar el diálogo (impreso o cancelado)
+window.onafterprint = function() {
+    document.getElementById('btnOcultos13').style.display = "flex"; // Volver a flex
+    document.getElementById('header3').style.display = "block";
+};
+
     function quitarDescuento3(e, num) {
         e.preventDefault(); // La D en mayúscula
         document.getElementById(`container-descuento${num}`).style.display = "none";
