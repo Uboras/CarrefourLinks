@@ -36,7 +36,7 @@
       </div>
     </div>
     <div id="btnOcultos">
-        <div class="contenedor-salir-imprimir" style="display: flex;flex-direction: flex;gap: 20px;">
+        <div class="contenedor-salir-imprimir" style="display: flex;flex-direction: row ;gap: 20px;">
             <button id="boton-Impresion" type="button" onclick="generatePrintA4()">Imprimir / guardar pdf</button>
             <button id="boton-Impresion" type="button" onclick="salir()">Salir</button>
         </div>
@@ -52,17 +52,23 @@
 <script src="../index.js"></script>
 <script src="./etiquetasA4.js"></script>
 <script>
+function generatePrintA4() {
+    // Simplemente disparamos la impresión
+    window.print();
+}
 
-    function generatePrintA4() {
-        document.getElementById(`btnOcultos`).style.display = "none";
-        document.getElementById(`header4`).style.display = "none";
-        window.print();
-        setTimeout(function () {
+// Se ejecuta automáticamente ANTES de abrir el diálogo de impresión
+window.onbeforeprint = function() {
+    document.getElementById('btnOcultos').style.display = "none";
+    document.getElementById('header4').style.display = "none";
+};
 
-            document.getElementById(`btnOcultos`).style.display = "block";
-            document.getElementById(`header4`).style.display = "block";
-        }, 3000);
-    }
+// Se ejecuta automáticamente DESPUÉS de cerrar el diálogo (impreso o cancelado)
+window.onafterprint = function() {
+    document.getElementById('btnOcultos').style.display = "flex"; // Volver a flex
+    document.getElementById('header4').style.display = "block";
+};
+
     function quitarDescuentoa4(e, num) {
         e.preventDefault(); // La D en mayúscula
         document.getElementById(`container-descuento${num}`).style.display = "none";
