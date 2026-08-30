@@ -39,31 +39,90 @@ searchInput.addEventListener("input", () => {
   });
 });
 
+/* =========================================================
+   BANNER PRINT3DECOS
+========================================================= */
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    const banner = document.getElementById("print3decos-banner");
+    const bannerContainer = document.getElementById("print3decos-banner");
 
-    if (banner) {
-        banner.innerHTML = `
+    if (!bannerContainer) return;
+
+    const banners = [
+        {
+            small: "IMPRESIONES 3D",
+            title: "🖨️ Print3Decos",
+            text: "Decoración, regalos y productos únicos hechos en 3D.",
+            button: "🔥 Ver productos →"
+        },
+        {
+            small: "REGALOS ORIGINALES",
+            title: "🎁 Algo diferente para regalar",
+            text: "Encontrá productos impresos en 3D para sorprender.",
+            button: "👉 Conocé Print3Decos →"
+        },
+        {
+            small: "DECORÁ TU ESPACIO",
+            title: "✨ Print3Decos",
+            text: "Dale un toque diferente a tu casa con impresión 3D.",
+            button: "🛒 Entrar a la tienda →"
+        }
+    ];
+
+    let bannerActual = 0;
+
+    function mostrarBanner() {
+
+        const banner = banners[bannerActual];
+
+        bannerContainer.innerHTML = `
             <a 
                 href="https://print3decos.manedev.site/"
                 target="_blank"
                 class="print3decos-banner"
             >
                 <div class="banner-content">
+
                     <div class="banner-text">
-                        <span class="banner-small">¿BUSCÁS PRODUCTOS ÚNICOS?</span>
-                        <h2>🖨️ Print3Decos</h2>
-                        <p>Impresiones 3D para decorar, regalar y mucho más.</p>
-                        <strong>👉 Conocé nuestra tienda</strong>
+
+                        <span class="banner-small">
+                            ${banner.small}
+                        </span>
+
+                        <h2>
+                            ${banner.title}
+                        </h2>
+
+                        <p>
+                            ${banner.text}
+                        </p>
+
+                        <strong>
+                            ${banner.button}
+                        </strong>
+
                     </div>
 
                     <div class="banner-icon">
                         🧸
                     </div>
+
                 </div>
             </a>
         `;
+
+        bannerActual++;
+
+        if (bannerActual >= banners.length) {
+            bannerActual = 0;
+        }
     }
+
+    // Mostrar inmediatamente
+    mostrarBanner();
+
+    // Cambiar cada 5 segundos
+    setInterval(mostrarBanner, 5000);
 
 });
