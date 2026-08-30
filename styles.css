@@ -108,3 +108,88 @@ footer {
   font-size: 13px;
   opacity: .6;
 }
+#print3decos-banner {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.print3decos-banner {
+    display: block;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: inherit;
+}
+
+.banner-content {
+    background: linear-gradient(135deg, #111827, #374151);
+    border-radius: 18px;
+    padding: 25px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.print3decos-banner:hover .banner-content {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.22);
+}
+
+.banner-text {
+    color: white;
+}
+
+.banner-small {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.banner-text h2 {
+    margin: 5px 0;
+    font-size: 30px;
+}
+
+.banner-text p {
+    margin: 5px 0 12px;
+    font-size: 16px;
+}
+
+.banner-text strong {
+    font-size: 14px;
+}
+
+.banner-icon {
+    font-size: 70px;
+    transform: rotate(-8deg);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    #print3decos-banner {
+        padding: 12px;
+    }
+
+    .banner-content {
+        padding: 20px;
+    }
+
+    .banner-text h2 {
+        font-size: 24px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+
+    .banner-icon {
+        font-size: 45px;
+    }
+}
