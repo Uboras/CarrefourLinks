@@ -108,6 +108,10 @@ footer {
   font-size: 13px;
   opacity: .6;
 }
+/* =========================================================
+   BANNER PRINT3DECOS
+========================================================= */
+
 #print3decos-banner {
     width: 100%;
     padding: 20px;
@@ -126,17 +130,25 @@ footer {
     background: linear-gradient(135deg, #111827, #374151);
     border-radius: 18px;
     padding: 25px 35px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     overflow: hidden;
+
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .print3decos-banner:hover .banner-content {
     transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.22);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.22);
 }
 
 .banner-text {
@@ -144,19 +156,27 @@ footer {
 }
 
 .banner-small {
+    display: block;
+
     font-size: 12px;
     font-weight: bold;
+
     letter-spacing: 1px;
+
     opacity: 0.8;
+
+    margin-bottom: 5px;
 }
 
 .banner-text h2 {
-    margin: 5px 0;
+    margin: 0 0 5px;
+
     font-size: 30px;
 }
 
 .banner-text p {
-    margin: 5px 0 12px;
+    margin: 0 0 12px;
+
     font-size: 16px;
 }
 
@@ -166,10 +186,16 @@ footer {
 
 .banner-icon {
     font-size: 70px;
+
     transform: rotate(-8deg);
+
+    margin-left: 20px;
 }
 
-/* Mobile */
+
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 600px) {
 
@@ -191,5 +217,7 @@ footer {
 
     .banner-icon {
         font-size: 45px;
+        margin-left: 10px;
     }
+
 }
