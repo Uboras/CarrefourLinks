@@ -39,4 +39,31 @@ searchInput.addEventListener("input", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
 
+    const banner = document.getElementById("print3decos-banner");
+
+    if (banner) {
+        banner.innerHTML = `
+            <a 
+                href="https://print3decos.manedev.site/"
+                target="_blank"
+                class="print3decos-banner"
+            >
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <span class="banner-small">¿BUSCÁS PRODUCTOS ÚNICOS?</span>
+                        <h2>🖨️ Print3Decos</h2>
+                        <p>Impresiones 3D para decorar, regalar y mucho más.</p>
+                        <strong>👉 Conocé nuestra tienda</strong>
+                    </div>
+
+                    <div class="banner-icon">
+                        🧸
+                    </div>
+                </div>
+            </a>
+        `;
+    }
+
+});
