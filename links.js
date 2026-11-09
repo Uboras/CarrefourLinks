@@ -9,6 +9,7 @@ const dataMatrix = [
   { title: "Salesforce", content: "https://inccarrefourarg2021.my.salesforce.com/", plataform: "Celulares y PC" },
   { title: "Tickets Caja", content: "https://gtickets.carrefour.com.ar/frontend/", plataform: "Solo PC" },
   { title: "Etiquetas Liquidación", content: "./Etiquetas/index.html", plataform: "Solo PC" },
+  { title: "Etiquetas Mercado Pago", content: "./EtiquetasMP/index.html", plataform: "Solo PC" },
   { title: "Portal OYM", content: "http://10.22.176.13/cajas_oym/", plataform: "Solo PC" },
   { title: "Consulta Cupones", content: "http://10.94.164.15:21000/cupones/cupones.do", plataform: "Solo PC" }
 ];
