@@ -20,7 +20,7 @@
 <script>
 'use strict';
 const $=id=>document.getElementById(id), storageKey='manedev-carteles-v1';
-const defaults={name:'GALLETITAS SABOR ORIGINAL REX ESTUCHE X 125 GRS',regular:2569,discount:70,validity:'Del 23/10 al 29/10',maximum:'8',code:'',unit:'',tax:'',extraEnabled:true,headline:'ADEMÁS HOY VIERNES 23/10 · ACUMULÁ',extra:15,payment:'Cuenta Digital'};
+const defaults={name:'GALLETITAS SABOR ORIGINAL REX ESTUCHE X 125 GRS',regular:2569,discount:70,validity:'Del 23/10 al 29/10',maximum:'8',code:'',unit:'',tax:'',extraEnabled:true,headline:'ADEMÁS HOY VIERNES 23/10 · ACUMULÁ',extra:15,payment:'MERCADO PAGO - DINERO EN CUENTA'};
 let state={size:3,white:false,selected:0,labels:[{data:{...defaults},edits:{}}]};
 try{const saved=JSON.parse(localStorage.getItem(storageKey));if(saved&&[2,3].includes(saved.size)&&Array.isArray(saved.labels)&&saved.labels.length&&saved.labels.every(x=>x.data&&x.edits))state=saved;}catch(e){}
 state.selected=Math.max(0,Math.min(state.selected||0,state.labels.length-1));
